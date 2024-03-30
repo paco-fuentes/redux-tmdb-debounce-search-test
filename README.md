@@ -1,9 +1,12 @@
 # A testing project with The Movie DB
+# 🎬
 
-This a testing project made with Vite that uses The Movie Database API just for practise and fun. 👾
+This a testing project made with Vite that uses The Movie Database API just for practise and fun. 
 
 
 #### Goals:
+
+# 🤺
 
 1. Practise CSS and add SASS / Tailwind on respective branches.
 2. Debounce search with Redux.
@@ -11,6 +14,8 @@ This a testing project made with Vite that uses The Movie Database API just for 
 
 
 #### Install:
+
+# 👾
 
 ```bash
     git clone 'this-repo-url'
