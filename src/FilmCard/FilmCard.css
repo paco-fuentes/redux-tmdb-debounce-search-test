@@ -1,0 +1,23 @@
+.filmCardDesign {
+  height: 20em;
+  width: 15em;
+  display: flex;
+  border-radius: 0.3em;
+  background-color: rgb(68, 158, 174);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  transition: 100ms;
+}
+
+.filmCardDesign:hover {
+  transform: scale(1.2);
+  background-color: rgb(135, 209, 222);
+  transition: 100ms;
+}
+
+.avatarPic {
+  height: 10em;
+  border-radius: 0.3em;
+}
