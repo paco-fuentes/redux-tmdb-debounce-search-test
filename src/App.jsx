@@ -6,18 +6,45 @@ import { FilmCard } from './FilmCard/FilmCard';
 function App() {
   const [films, setFilms] = useState([]);
 
+  // useEffect(() => {
+  //   if (films.length === 0) {
+  //     latestMovie()
+  //       .then((results) => {
+  //         setFilms(results.data.results);
+  //       })
+  //       .catch((error) => console.log(error));
+  //   }
+  // }, [films])
+
+  // const bringFilms = async () => {
+  //   try {
+  //     const response = await latestMovie();
+  //     setFilms(response.data.results);
+  //   } catch (error) {
+
+  //   }
+  // } 
+  
   useEffect(() => {
-    if (films.length === 0) {
-      latestMovie()
-        .then((results) => {
-          setFilms(results.data.results);
-        })
-        .catch((error) => console.log(error));
+    async function fetchData() {
+      if (films.length === 0) {
+        try {
+          const response = await latestMovie();
+          setFilms(response.data.results);
+        } catch (error) {
+          console.log(response.error);
+        }
+      }
     }
-  }, [films])
+  
+    fetchData();
+  
+  }, [films]);
+  
 
   return (
     <div className='filmsContainer'>
+      {/* <button onClick={bringFilms}>Mi boton</button> */}
       {films.length > 0 ? (
         <div className='filmRoster'>
           {films.map((film) => {
@@ -39,4 +66,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

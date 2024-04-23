@@ -9,7 +9,7 @@ This a testing project made with Vite that uses The Movie Database API just for 
 # 🤺
 
 1. Practise CSS and add SASS / Tailwind on respective branches.
-2. Debounce search with Redux.
+2. Debounce search with React Redux.
 3. Database queries.
 
 
